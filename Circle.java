@@ -1,28 +1,41 @@
-import java.math;
+
+
 public class Circle {
-    private float radius  ;
-    private String color  ;
 
-    public void  setRaduis(float r ){
-        radius = r ;
+    private double radius;
+    private String color;
 
-    }
-      public void  setColor(String s ){
-        color = s ;
+    public void setRaduis(double r) {
+        radius = r;
 
     }
-    public float getRadius(){
-        return radius ;
+
+    public void setColor(String s) {
+        color = s;
 
     }
-    
-    public String getColor(){
-        return color ;
+
+    public double getRadius() {
+        return radius;
 
     }
-    public float getArea(){
-        return pow(radius,2) *3.14 ;
 
+    public String getColor() {
+        return color;
+
+    }
+
+    public double getArea() {
+
+        return Math.PI * Math.pow(radius, 2);
+    }
+
+    public double getCirucumference() {
+
+        return Math.PI * 2 * radius;
+    }
+    public String ToString(){
+        return "Circle[" +"radius ]"+radius+" ,color "+this.color+" ]" ;
     }
 
 }
