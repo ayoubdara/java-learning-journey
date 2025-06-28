@@ -63,15 +63,31 @@ public class classesAndObject {
         account2.deposit(550);
         account2.withDraw(10);
         account2.checkBalance();
-        account2.ToString() ;
+        account2.ToString();
 
-
-         BankAccount acount3 = new BankAccount();
+        BankAccount acount3 = new BankAccount();
         acount3.insert(9563145, "bilal", 100);
         acount3.deposit(50);
         acount3.withDraw(140);
         acount3.checkBalance();
         acount3.toString();
+
+        // paramtrezed constructor
+        ConstructorLessons product1 = new ConstructorLessons("Dd", "dd", 0, 2.5);
+
+        product1.ToStrings();
+        // no-arg constructor
+        ConstructorLessons product2 = new ConstructorLessons();
+        product2.ToStrings();
+        // Chaining constru
+        ConstructorLessons product3 = new ConstructorLessons("Dd", "dd", 0, 2.5,"red");
+        product3.ToStrings();
+        // copy constru
+        ConstructorLessons product4 = new ConstructorLessons(product3);
+        product4.ToStrings();
+
+
+
 
     }
 
