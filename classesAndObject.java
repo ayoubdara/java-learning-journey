@@ -86,6 +86,23 @@ public class classesAndObject {
         ConstructorLessons product4 = new ConstructorLessons(product3);
         product4.ToStrings();
 
+        // Static key word 
+        StaticKeyWord student1 = new StaticKeyWord("jhdsj") ;
+        StaticKeyWord student2 = new StaticKeyWord("jhdsj") ;
+        StaticKeyWord student3 = new StaticKeyWord("jhdsj") ;
+        StaticKeyWord student4 = new StaticKeyWord("jhdsj") ;
+
+        // static key word 
+        System.out.println( StaticKeyWord.college);
+        
+        student1.ToString();
+        student2.ToString();
+        student3.ToString();
+        student4.ToString();
+
+
+        
+
 
 
 
